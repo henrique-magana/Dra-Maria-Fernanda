@@ -1,10 +1,11 @@
 :root{
   --dourado:#c8c487;
   --vinho:#620a23;
-  --branco--claro:#fff6d7;
+  --branco--claro:#fdf6df;
   --novo--vinho: #8b1e3f;
   --bege: #e2d9b7;
   --verde: #3b4d2a;
+  --branco: #f9f9f9;
 }
 
 
@@ -14,14 +15,19 @@
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   }
   
+body{
+  background-color: var(--branco);
+}
+
   a {
-    color: var(--dourado);
+    color: var(--bege);
     text-decoration: none;
     transition: 0.3s;
   }
   
   a:hover {
     opacity: 0.7;
+    color: var(--dourado);
   }
   
   .logo {
@@ -34,7 +40,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #620a23;
+    background: var(--vinho);
     height: 8vh;
   }
   
@@ -78,6 +84,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 7vh;
   }
 
   .banner__titulo{
@@ -89,19 +96,22 @@
     font-size: 20px;
   }
 
-  .banner__botao{
+  .botao{
     padding: 10px 20px;
     background-color: var(--vinho);
     border-radius: 5px;
     font-weight: bold;
   }
 
+
   /*Fim Banner Inicio Servicos*/
 
-  .servicos{
+  .servicos, .contratar{
     display: flex;
     flex-direction: column;
-    margin: 10vh 0 0 0;
+    margin: 3vh 0 0 0;
+    padding: 0 5vh;
+    height: 70vh;
   }
 
   .servicos__titulo{
@@ -119,23 +129,162 @@
     box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
     border-radius: 5%;
     width: 60vh;
-    height: 40vh;
+    height: 50vh;
   } 
 
   .servicos__descricao__detalhe h1{
     text-align: center;
-    margin: 2vh 0 5vh 0;
+    margin: 4vh 0 5vh 0;
   } 
 
   .servicos__descricao__detalhe ul{
-    margin: 0 0 0 5vh;
+    margin: 0 5vh;
     list-style-type: none;
   } 
 
   .servicos__descricao__detalhe li{
-
+    font-size: 20px;
   } 
 
+  .servicos__descricao__detalhe__botao{
+    text-align: center;
+    margin: 10vh 0 0 0;
+  }
+
+/*Fim dos servicos e Inicio do Como contratar*/
+
+.contratar{
+  
+}
+
+.contratar__titulo{
+  text-align: center;
+  margin: 0 0 10vh;
+}
+
+.contratar__passo{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.contratar__passo__caixa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vh;
+  height: 40vh;
+  background-color: var(--vinho);
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+  border-radius: 5%;
+}
+
+
+
+.contratar__passo__caixa h1{
+  margin: 2vh 0;
+  color: var(--branco--claro);
+}
+
+
+.contratar__passo__caixa p{
+  margin: 0 3vh;
+  color: var(--branco--claro);
+  text-align: justify;
+}
+
+/*Fim de Passo a Passo Inicio de COntato*/
+
+
+.contato{
+  display: flex;
+  flex-direction: column;
+  margin: -5vh 20vh;
+  padding: 0 5vh;
+  height: 70vh;
+  text-align: center;
+ }
+
+.contato__titulo{
+  text-align: center;
+  margin: 0 0 5vh;
+}
+
+.contato__dados{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0vh;
+  background-color: var(--bege);
+  height: 40vh;
+}
+
+.contato__dados__caixa{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
+  width: 60vh;
+  margin: 3vh 0;
+}
+
+.contato__dados__caixa ul{
+  list-style-type: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+iframe{
+  width: 60vh;
+}
+
+
+.rodape{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vinho);
+}
+
+.rodape__informacoes{
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
+  align-items: center;
+  color: var(--branco--claro);
+}
+
+
+.rodape__informacoes__logo{
+  height: 100px;
+  width: 300px;
+}
+
+.rodape__informacoes__direitos h1{
+  font-size: 20px;
+}
+
+.rodape__informacoes__redes{
+  display: flex;
+  justify-content: space-around;
+}
+
+.rodape__informacoes__redes img{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.rodape__desenvolvido{
+  text-align: center;
+}
+
+.rodape__desenvolvido h1{
+  font-size: 12px;
+  color: var(--branco--claro);
+  border: 0.2px solid white;
+  font-weight: normal;
+}
 
 
 

@@ -96,8 +96,52 @@
     font-weight: bold;
   }
 
+  /*Fim Banner Inicio Servicos*/
 
-  
+  .servicos{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 0 0 0;
+  }
+
+  .servicos__titulo{
+    text-align: center;
+    margin: 0 0 5vh 0;
+  }
+
+  .servicos__descricao{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .servicos__descricao__detalhe{
+    background-color: var(--branco--claro);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 5%;
+    width: 60vh;
+    height: 40vh;
+  } 
+
+  .servicos__descricao__detalhe h1{
+    text-align: center;
+    margin: 2vh 0 5vh 0;
+  } 
+
+  .servicos__descricao__detalhe ul{
+    margin: 0 0 0 5vh;
+    list-style-type: none;
+  } 
+
+  .servicos__descricao__detalhe li{
+
+  } 
+
+
+
+
+
+
+
   @media (max-width: 999px) {
     body {
       overflow-x: hidden;
